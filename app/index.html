@@ -10,7 +10,16 @@
 
 <input type="text" ng-model="test"/>
 
+
+
 {{ test }}
+
+<select data-placeholder="Виберіть місто" name="city" ui-select2 ng-model="user.city" >
+    <option value=""></option>
+    <option value="one">Вінниця</option>
+    <option value="two">Київ</option>
+    <option value="three">Чегнігів</option>
+</select>
 
 </body>
 </html>

@@ -1,1 +1,43 @@
 @import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "libs/select2.less";
+
+/** SELECT 2 **/
+.select2-container {
+  width: 100%;
+  .select2-choice {
+    padding: @padding-base-vertical @padding-base-horizontal;
+    border: 1px solid #CCCCCC;
+    height: @input-height-base;
+
+    & > .select2-chosen {
+      line-height: normal;
+    }
+    .select2-arrow {
+      border-color: #CCC;
+      width: 26px;
+      background: #eeeeee;
+      &:active {
+        background: none;
+      }
+      b {
+        background-position: -2px -8px;
+        width: 12px;
+        height: 16px;
+        left: 50%;
+        top: 50%;
+        margin-left: -6px;
+        margin-top: -6px;
+        position: absolute;
+      }
+    }
+  }
+}
+.select2-dropdown-open .select2-choice .select2-arrow {
+  background: none;
+  border-left: 1px solid #CCCCCC;
+}
+.select2-container-active .select2-choice, .select2-container-active .select2-choices {
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(82, 168, 236, 0.6);
+  border-color: rgba(82, 168, 236, 0.8);
+}
+/*****/
