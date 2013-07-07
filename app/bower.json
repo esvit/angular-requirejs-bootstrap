@@ -1,0 +1,17 @@
+{
+  "name": "angular-requirejs-bootstrap",
+  "version": "0.0.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "~2.1.6",
+    "jquery": "~2.0.3",
+    "angular": "https://github.com/atizo/bower-angular-unstable.git#~1.1.5"
+  }
+}
